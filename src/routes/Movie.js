@@ -78,9 +78,7 @@ const Movie = () => {
       <Column>
         <Title>{loading ? "Loading..." : `${data.movie?.title}`}</Title>
         <Subtitle>⭐️ {data?.movie?.rating}</Subtitle>
-        <button onClick={onClickHandler}>
-          {data?.movie?.isLiked ? "Unliked" : "Liked"}
-        </button>
+        <button onClick={onClickHandler}>{data?.movie?.isLiked ? "Unliked" : "Liked"}</button>
       </Column>
       <Image bg={data?.movie?.medium_cover_image} />
     </Container>
